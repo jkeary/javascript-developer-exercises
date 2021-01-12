@@ -13,6 +13,19 @@ function paintMixer(color1, color2) {
   */
   // PLACE YOUR CODE BELOW
 
+  // this can be expanded with more combos, maybe even to do additive or subtractive mixing.
+  let mix = {
+    'blue + red': 'purple',
+    'green + red': 'brown',
+    'red + yellow': 'orange',
+    'blue + yellow': 'green',
+  }
+
+  // alphabetize
+  colors = [color1, color2].sort();
+  
+  // return the mixture if its found
+  return mix[colors.join(' + ')] || 'unknown';
   // PLACE YOUR CODE ABOVE
 }
 
