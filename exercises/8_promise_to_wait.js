@@ -16,7 +16,12 @@ to the console, waits 3 more seconds and then writes
 console.log('Go!')
 
 // PLACE YOUR CODE BELOW
-
+wait(1).then(() => {
+  console.log('I waited 1 second')
+  return wait(3);
+}).then(() => {
+  console.log('I waited 3 more seconds');
+})
 // PLACE YOUR CODE ABOVE
 /*
 You console output should look like the following AND wait the
