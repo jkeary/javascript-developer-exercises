@@ -4,9 +4,9 @@ var words = [
   'supper',
   'find',
   'storm',
-]
+];
 
-var wordList = "You need to save your words into wordList"
+var wordList = "You need to save your words into wordList";
 
 /*
 Process the array so that you take the word formed by the second and
@@ -21,6 +21,13 @@ Place your code that does all of this below this comment block, and
 before the next comment block.
 */
 // PLACE YOUR CODE BELOW
+wordList = (oldWords => {
+  let newWords = []
+  for (const word of oldWords) {
+    newWords.push(word.substr(1, 2))
+  }
+  return newWords.join(', '); 
+})(words);
 
 // PLACE YOUR CODE ABOVE
 /*
