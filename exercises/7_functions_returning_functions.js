@@ -9,7 +9,6 @@ function createGetFunction(elementToReturn) {
   // PLACE YOUR CODE BELOW
   let index = elementToReturn - 1
   return (elements => elements[index])
-
   // PLACE YOUR CODE ABOVE
 }
 
